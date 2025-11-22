@@ -1,0 +1,245 @@
+
+/* =========================================
+   ESTILOS GENERALES (Base oscura ASIKS)
+   ========================================= */
+body {
+    background-color: #000000; /* Fondo negro puro */
+    color: #ffffff;            /* Texto blanco */
+    font-family: 'Arial', sans-serif; /* Fuente estándar limpia */
+    margin: 0;
+    padding: 0;
+}
+
+/* Asegura que las imágenes no se deformen nunca */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Enlaces generales */
+a {
+    text-decoration: none;
+    color: inherit; /* Hereda el color blanco */
+    transition: 0.3s;
+}
+
+/* =========================================
+   ESTILOS DE TU CONTENIDO (MAIN)
+   ========================================= */
+
+/* Separación para que el contenido no se pegue al header/footer */
+main {
+    padding: 40px 20px;
+    min-height: 80vh; /* Asegura que ocupe casi toda la pantalla */
+}
+
+/* Títulos de las secciones (H2) */
+.intro-seccion {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.intro-seccion h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px; /* Espaciado elegante */
+    margin-bottom: 10px;
+    border-bottom: 2px solid #333; /* Línea sutil debajo del título */
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.intro-seccion p {
+    color: #aaa; /* Gris claro para subtítulos */
+    font-size: 1.1rem;
+}
+
+/* Miga de pan (Breadcrumb) */
+.breadcrumb {
+    padding: 10px 50px;
+    font-size: 0.9rem;
+    color: #666;
+}
+.breadcrumb a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* =========================================
+   GRID 1: LISTA DE PRODUCTOS (4 Columnas)
+   Usado en: ropa.html, zapatillas.html...
+   ========================================= */
+.catalogo-grid {
+    display: grid;
+    /* 4 columnas iguales */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px; /* Espacio entre tarjetas */
+    max-width: 1400px;
+    margin: 0 auto; /* Centrado */
+}
+
+/* Tarjeta individual de producto */
+.producto {
+    background-color: #121212; /* Gris muy oscuro (casi negro) */
+    border: 1px solid #333;    /* Borde sutil */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el ratón por encima del producto */
+.producto:hover {
+    transform: translateY(-10px); /* Sube un poco */
+    border-color: #ffffff;        /* Borde blanco brillante */
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); /* Sombra suave */
+}
+
+.producto img {
+    width: 100%;
+    height: 250px;      /* Altura fija para uniformidad */
+    object-fit: cover;  /* Recorta la imagen para que llene el hueco */
+    margin-bottom: 20px;
+    filter: brightness(0.9); /* Un pelín oscuras por defecto */
+}
+
+.producto:hover img {
+    filter: brightness(1.1); /* Se iluminan al pasar el ratón */
+}
+
+.producto h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.precio {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* Botón "Ver producto" */
+.btn-ver {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.btn-ver:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+/* =========================================
+   GRID 2: CATEGORÍAS PRINCIPALES (3 Columnas)
+   Usado en: contingut.html
+   ========================================= */
+.categorias-grid {
+    display: grid;
+    /* 3 columnas grandes */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.categoria-card {
+    position: relative; /* Para poder poner texto encima de la imagen si quisieras */
+    background-color: #111;
+    border: 1px solid #333;
+    text-align: center;
+    padding-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.categoria-card:hover {
+    transform: scale(1.02); /* Zoom muy suave */
+    border-color: #fff;
+}
+
+.categoria-card img {
+    height: 400px; /* Imágenes más altas y grandes */
+    width: 100%;
+    object-fit: cover;
+}
+
+.categoria-card h3 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+/* =========================================
+   NAVEGACIÓN INFERIOR (Botones volver)
+   ========================================= */
+.navegacion-inferior {
+    text-align: center;
+    margin-top: 60px;
+    border-top: 1px solid #333;
+    padding-top: 30px;
+}
+
+.btn-volver {
+    font-size: 1.2rem;
+    color: #888;
+}
+
+.btn-volver:hover {
+    color: #fff;
+}
+
+/* =========================================
+   RESPONSIVE (Adaptación a Móvil/Tablet)
+   ========================================= */
+
+/* Tablets (Pantallas medianas) */
+@media (max-width: 1024px) {
+    .catalogo-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Mobile (Pantallas pequeñas) */
+@media (max-width: 768px) {
+    .catalogo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .categorias-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-seccion h2 {
+        font-size: 1.8rem;
+    }
+
+    main {
+        padding: 20px 10px;
+    }
+}
+
+/* Mobile muy pequeño (Pantallas muy pequeñas) */
+@media (max-width: 480px) {
+    .catalogo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .precio {
+        font-size: 1.1rem;
+    }
+
+    .intro-seccion h2 {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+}
+
+

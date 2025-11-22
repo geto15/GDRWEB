@@ -1,83 +1,139 @@
 <!DOCTYPE html>
 <html lang="es">
+<html lang="es">
+
 <head>
+
+    <title>Asiks</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Colección de ropa deportiva: sudaderas, camisetas y pantalones.">
-    <title>Ropa Deportiva - SportActive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="Asiks">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="Index,Follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <link href="css/estilo.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+
 </head>
+
+
 <body>
 
-    <header>
-        <h1>SportActive</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="contingut.html">Catálogo</a></li>
-                <li><a href="info.html">Sobre Nosotros</a></li>
+    <header id="hea"> <!-- Cabecera y menú de navegación -->
+
+        <span class="nav-bar" id="btnMenu"><i class="fas fa-bars"> </i> Menú</span>
+
+        <nav class="main-nav" id="navbar">  <!-- Menú de navegación -->
+
+            
+            <ul class="menu"> 
+                <a href="#"><img src="imagenes/logo.png"></a>
+                <li><a href="index.html" class="menu__link"> Inicio </a> </li>
+                <li><a href="descuentos.html" class="menu__link"> Black Friday </a> </li>
+                <li class="container-submenu"><a href="#" class="menu__link submenu-btn">
+                        Productos <i class="fas fa-chevron-down"></i></a>
+
+                    <ul class="submenu" id="submenu">
+                        <li><a href="ropa.html" class="menu__link"> Camisetas </a> </li>
+                        <li><a href="zapatillas.html" class="menu__link"> Deportivas </a> </li>
+                        <li><a href="articulos.html" class="menu__link"> Articulos </a> </li>
+                    </ul>
+                </li>
+
+                <li class="menu__item"><a href="contacto.html" class="menu__link"> Contacto </a> </li>
             </ul>
         </nav>
+
     </header>
 
-    <nav>
-        <small>Estás en: <a href="contingut.html">Catálogo</a> > Ropa Deportiva</small>
-    </nav>
 
-    <main>
-        <header>
-            <h2>Sección de Ropa</h2>
-            <p>Encuentra tu estilo con nuestra colección de temporada.</p>
-        </header>
+    <main> <!-- Contenido principal de la página -->
+        <section class="intro-seccion"> <!-- Sección introductoria -->
+            <h2>CALZADO RUNNING & TRAINING</h2>
+            <p>Domina el asfalto y la montaña con nuestra tecnología de amortiguación.</p>
+        </section>
 
-        <section>
+        <section class="catalogo-grid"> <!-- Sección de catálogo en cuadrícula -->
             
-            <article>
-                <img src="assets/img/ropa1.jpg" alt="Sudadera gris con capucha" width="250">
-                <h3>Sudadera Hoody Grey</h3>
-                <p>Sudadera térmica ideal para entrenar al aire libre.</p>
-                <p><strong>Precio: 35.00€</strong></p>
-                <a href="detall.html">Ver detalles del producto</a>
+            <article class="producto"> <!-- Producto individual -->
+                <img src="assets/img/zapa1.jpg" alt="Zapatillas Naranjas Running">
+                <h3>Speed Demon 500</h3>
+                <p>Amortiguación para asfalto.</p>
+                <p class="precio">89.99€</p>
+                <a href="#" class="btn-ver">Ver producto</a>
             </article>
             
-            <hr> <article>
-                <img src="assets/img/ropa2.jpg" alt="Camiseta técnica de manga corta azul" width="250">
-                <h3>Camiseta Run Fast</h3>
-                <p>Tecnología de secado rápido y costuras planas.</p>
-                <p><strong>Precio: 19.99€</strong></p>
-                <a href="detall.html">Ver detalles del producto</a>
+            <article class="producto"> <!-- Producto individual -->
+                <img src="assets/img/zapa2.jpg" alt="Zapatillas Verdes Trail">
+                <h3>Trail Master X</h3>
+                <p>Agarre extremo en montaña.</p>
+                <p class="precio">110.00€</p>
+                <a href="#" class="btn-ver">Ver producto</a>
             </article>
 
-            <hr>
-
-            <article>
-                <img src="assets/img/ropa3.jpg" alt="Pantalones cortos de running negros" width="250">
-                <h3>Shorts Marathon</h3>
-                <p>Ligeros y con bolsillo interior para llaves.</p>
-                <p><strong>Precio: 22.50€</strong></p>
-                <a href="detall.html">Ver detalles del producto</a>
+            <article class="producto"> <!-- Producto individual -->
+                <img src="assets/img/zapa3.jpg" alt="Zapatillas Competición">
+                <h3>Marathon Fly</h3>
+                <p>Ultraligeras y veloces.</p>
+                <p class="precio">130.00€</p>
+                <a href="#" class="btn-ver">Ver producto</a>
             </article>
 
-            <hr>
-
-            <article>
-                <img src="assets/img/ropa4.jpg" alt="Chaqueta cortavientos amarilla fosforito" width="250">
-                <h3>Cortavientos Night</h3>
-                <p>Alta visibilidad para correr de noche. Impermeable.</p>
-                <p><strong>Precio: 45.00€</strong></p>
-                <a href="detall.html">Ver detalles del producto</a>
+            <article class="producto">   <!-- Producto individual -->   
+                <img src="assets/img/zapa4.jpg" alt="Zapatillas Negras Gym">
+                <h3>Gym Flex 2</h3>
+                <p>Estabilidad para pesas.</p>
+                <p class="precio">60.00€</p>
+                <a href="#" class="btn-ver">Ver producto</a>
             </article>
 
         </section>
 
-        <section>
-            <br>
-            <a href="contingut.html">⬅ Volver a Categorías</a>
-        </section>
+        <nav class="navegacion-inferior"> <!-- Navegación inferior para volver al contenido principal -->
+            <a href="contingut.html" class="btn-volver">⬅ Volver a Categorías</a>
+        </nav>
 
     </main>
 
     <footer>
-        <p>&copy; 2023 SportActive - Ropa de calidad</p>
+
+        <div>
+
+            <p class="info"><a href="#">973 26 57 39</a></p>
+            <p class="info"><a href="#">asiksshop@gmail.com</a></p>
+            <address>Calle Javier Cardenas Nº 26</address>
+            <p class="info">&#169;​2025 ASIKS Company</p>
+            
+        </div>
+
+        <div class="iconos-foo">
+
+            <p>Siguenos en nuestras redes</p>
+
+            <!-- Facebook -->
+            <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+
+            <!-- X (Twitter) -->
+            <a href="#"><i class="fa-brands fa-x fa-2x"></i></a>
+
+            <!-- Instagram -->
+            <a href="www.instagram.com/"><i class="fa-brands fa-instagram fa-2x"></i></a>
+
+        </div>
+
+
+        </div>
+
+
     </footer>
 
 </body>

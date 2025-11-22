@@ -16,10 +16,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
-    <link href="css/estilo.css" rel="stylesheet"> 
-    <link href="css/menu.css" rel="stylesheet"> <!-- Estilos del menú de navegación -->
-    <link href="css/footer.css" rel="stylesheet"> <!-- Estilos del pie de página -->
-    <link rel="stylesheet" href="css/style.css"> <!-- Estilos principales -->
+    <link href="css/estilo.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 
 
 </head>
@@ -27,7 +27,7 @@
 
 <body>
 
-    <header id="hea"> <!-- Cabecera y menú de navegación -->
+    <header id="hea">   <!-- Cabecera y menú de navegación -->
 
         <span class="nav-bar" id="btnMenu"><i class="fas fa-bars"> </i> Menú</span>
 
@@ -39,7 +39,7 @@
                 <li><a href="index.html" class="menu__link"> Inicio </a> </li>
                 <li><a href="descuentos.html" class="menu__link"> Black Friday </a> </li>
                 <li class="container-submenu"><a href="contingut.html" class="menu__link submenu-btn">
-                        Productos <i class="fas fa-chevron-down"></i></a>
+                        Productos <a><i class="fas fa-chevron-down"></i></a>
 
                     <ul class="submenu" id="submenu">
                         <li><a href="ropa.html" class="menu__link"> Camisetas </a> </li>
@@ -53,39 +53,57 @@
         </nav>
 
     </header>
+
+    <h1 class="breadcrumb"> <!-- Breadcrumb de navegación -->
+        <small>Estás en: <a href="contingut.html">Ofertas Back Friday</a></small>
+    </h1>
+
     <main> <!-- Contenido principal de la página -->
         <section class="intro-seccion"> <!-- Sección introductoria -->
-            <h2>EXPLORA NUESTRAS COLECCIONES</h2>
-            <p>Selecciona una categoría para ver los productos disponibles.</p>
+            <h2>CALZADO RUNNING & TRAINING</h2>
+            <p>Difruta de la máxima comodidad .</p>
         </section>
 
-        <section class="categorias-grid"> <!-- Sección de categorías en cuadrícula -->
+        <section class="catalogo-grid"> <!-- Sección de catálogo en cuadrícula -->
             
-            <article class="categoria-card"> <!-- Tarjeta individual de categoría -->
-                <a href="ropa.html">
-                    <img src="imagenes/ropa deportiva.jpeg" alt="Colección de Ropa">
-                    <h3>ROPA DEPORTIVA</h3>
-                    <p>Ver colección &rarr;</p>
-                </a>
+            <article class="producto"> <!-- Producto individual -->
+                <img src="assets/img/zapa1.jpg" alt="Zapatillas Naranjas Running">
+                <h3>Kai Cenat 300</h3>
+                <p>Amortiguación para asfalto.</p>
+                <p class="precio">89.99€</p>
+                <a href="#" class="btn-ver">Ver producto</a>
+            </article>
+            
+            <article class="producto"> <!-- Producto individual -->
+                <img src="assets/img/zapa2.jpg" alt="Zapatillas Verdes Trail">
+                <h3>Dunk low</h3>
+                <p>Agarre extremo en montaña.</p>
+                <p class="precio">110.00€</p>
+                <a href="#" class="btn-ver">Ver producto</a>
             </article>
 
-            <article class="categoria-card"> <!-- Tarjeta individual de categoría -->
-                <a href="zapatillas.html">
-                    <img src="imagenes/calzadoruning.jpeg" alt="Colección de Zapatillas">
-                    <h3>CALZADO RUNNING</h3>
-                    <p>Ver colección &rarr;</p>
-                </a>
+            <article class="producto"> <!-- Producto individual -->
+                <img src="assets/img/zapa3.jpg" alt="Zapatillas Competición">
+                <h3>Light Adidas</h3>
+                <p>Ultraligeras y veloces.</p>
+                <p class="precio">130.00€</p>
+                <a href="#" class="btn-ver">Ver producto</a>
             </article>
 
-            <article class="categoria-card">    <!-- Tarjeta individual de categoría -->
-                <a href="articulos.html">
-                    <img src="imagenes/accesorios.jpeg" alt="Colección de Accesorios">
-                    <h3>ARTÍCULOS Y ACCESORIOS</h3>
-                    <p>Ver colección &rarr;</p>
-                </a>
+            <article class="producto">    <!-- Producto individual -->
+                <img src="assets/img/zapa4.jpg" alt="Zapatillas Negras Gym">
+                <h3>Puma high dunk</h3>
+                <p>Estabilidad para pesas.</p>
+                <p class="precio">60.00€</p>
+                <a href="#" class="btn-ver">Ver producto</a>
             </article>
 
         </section>
+
+        <nav class="navegacion-inferior"> <!-- Navegación inferior para volver al contenido principal -->
+            <a href="contingut.html" class="btn-volver">⬅ Volver a Categorías</a>
+        </nav>
+
     </main>
 
     <footer>

@@ -16,10 +16,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
-    <link href="css/estilo.css" rel="stylesheet"> 
-    <link href="css/menu.css" rel="stylesheet"> <!-- Estilos del menú de navegación -->
-    <link href="css/footer.css" rel="stylesheet"> <!-- Estilos del pie de página -->
-    <link rel="stylesheet" href="css/style.css"> <!-- Estilos principales -->
+    <link href="css/estilo.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 
 
 </head>
@@ -38,7 +38,7 @@
                 <a href="#"><img src="imagenes/logo.png"></a>
                 <li><a href="index.html" class="menu__link"> Inicio </a> </li>
                 <li><a href="descuentos.html" class="menu__link"> Black Friday </a> </li>
-                <li class="container-submenu"><a href="contingut.html" class="menu__link submenu-btn">
+                <li class="container-submenu"><a href="#" class="menu__link submenu-btn">
                         Productos <i class="fas fa-chevron-down"></i></a>
 
                     <ul class="submenu" id="submenu">
@@ -53,44 +53,48 @@
         </nav>
 
     </header>
-    <main> <!-- Contenido principal de la página -->
-        <section class="intro-seccion"> <!-- Sección introductoria -->
-            <h2>EXPLORA NUESTRAS COLECCIONES</h2>
-            <p>Selecciona una categoría para ver los productos disponibles.</p>
+
+        <main> <!-- Contenido principal de la página -->
+
+        <section> <!-- Sección de contacto -->
+            <p>Calle: Carrer de Cartago, 2, Platja de Palma, 07600 S'Arenal, Illes Balears</p>
+            <p>Contacto: +34 93 122 39 58 </p>
+            <p>Horario: Lunes a Sábado de 9:00 a 21:30h</p>
+        
+            <div class="derecha"> <!-- Mapa de localización -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3078.187676608528!2d2.7495431!3d39.5102537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12979644977a764b%3A0x9676d15e6bb067e2!2sNew%20Era!5e0!3m2!1ses!2ses!4v1763491236458!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
+        <table class="center"> <!-- Formulario de contacto -->
+        <tr>
+            <td><label>Nombre:</label></td>
+            <td><input type="text" name="nombre"></td>
+        </tr>
+        <tr>
+            <td><label>Apellido:</label></td>
+            <td><input type="text" name="apellido"></td>
+        </tr>
+        <tr>
+            <td><label>Email:</label></td>
+            <td><input type="email" name="email"></td>
+        </tr>
+        <tr>
+            <td><label>Dirección:</label></td>
+            <td><input type="text" name="mensaje"></td>
+        </tr>
+        <tr>
+            <td><label>Teléfono</label></td>
+            <td><input type="text" name="telefono"></td>
+            <td><input type="submit" value="Enviar"></td>
+        </tr>
+    </table>
 
-        <section class="categorias-grid"> <!-- Sección de categorías en cuadrícula -->
-            
-            <article class="categoria-card"> <!-- Tarjeta individual de categoría -->
-                <a href="ropa.html">
-                    <img src="imagenes/ropa deportiva.jpeg" alt="Colección de Ropa">
-                    <h3>ROPA DEPORTIVA</h3>
-                    <p>Ver colección &rarr;</p>
-                </a>
-            </article>
 
-            <article class="categoria-card"> <!-- Tarjeta individual de categoría -->
-                <a href="zapatillas.html">
-                    <img src="imagenes/calzadoruning.jpeg" alt="Colección de Zapatillas">
-                    <h3>CALZADO RUNNING</h3>
-                    <p>Ver colección &rarr;</p>
-                </a>
-            </article>
-
-            <article class="categoria-card">    <!-- Tarjeta individual de categoría -->
-                <a href="articulos.html">
-                    <img src="imagenes/accesorios.jpeg" alt="Colección de Accesorios">
-                    <h3>ARTÍCULOS Y ACCESORIOS</h3>
-                    <p>Ver colección &rarr;</p>
-                </a>
-            </article>
-
-        </section>
     </main>
 
-    <footer>
+<footer>
 
-        <div> <!-- Información del pie de página -->
+        <div>
 
             <p class="info"><a href="#">973 26 57 39</a></p>
             <p class="info"><a href="#">asiksshop@gmail.com</a></p>
@@ -119,6 +123,5 @@
 
 
     </footer>
-
 </body>
 </html>

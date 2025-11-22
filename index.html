@@ -1,10 +1,217 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Página del grupo</title>
+
+    <title>Asiks</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="Asiks">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="Index,Follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <link href="css/estilo.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+
+
 </head>
+
+
 <body>
-  <h1>Bienvenidos a nuestro proyecto web</h1>
+
+    <header id="hea">  <!-- Cabecera y menú de navegación -->
+
+        <span class="nav-bar" id="btnMenu"><i class="fas fa-bars"> </i> Menú</span>
+
+        <nav class="main-nav" id="navbar"> <!-- Menú de navegación -->
+
+            
+            <ul class="menu">
+                <a href="#"><img src="imagenes/logo.png"></a>
+                <li><a href="index.html" class="menu__link"> Inicio </a> </li>
+                <li><a href="descuentos.html" class="menu__link"> Black Friday </a> </li>
+                <li class="container-submenu"><a href="contingut.html" class="menu__link submenu-btn">
+                        Productos <i class="fas fa-chevron-down"></i></a>
+
+                    <ul class="submenu" id="submenu">
+                        <li><a href="ropa.html" class="menu__link"> Camisetas </a> </li>
+                        <li><a href="zapatillas.html" class="menu__link"> Deportivas </a> </li>
+                        <li><a href="articulos.html" class="menu__link"> Articulos </a> </li>
+                    </ul>
+                </li>
+
+                <li class="menu__item"><a href="contacto.html" class="menu__link"> Contacto </a> </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main> <!-- Contenido principal de la página -->
+
+        <section id="sec1"> <!-- Sección de la portada -->
+
+            <div id="portada">
+
+                <img id="portada-img" src="imagenes/portada.jpg" alt="portada">
+
+                <div id="portada-titulo">
+
+                    <p id="marca">ASIKS</p>
+                    <p id="eslogan">El mejor amigo de los atletas</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-------------------------------SLIDER---------------------------------->
+
+        <section id="container-slider">
+
+            <article class="slider">
+
+                <article class="slides">
+
+                    <a href="camisetas.html"></a>
+
+                    <div class="slider__div">
+
+                        <p class="pe">¡CAMISETAS EN OFERTA!</p>
+                        <img src="imagenes/Scamisetas.jpg" alt="Imagen 1">
+
+                    </div>
+
+                    <a href="zapatillas.html"></a>
+
+                    <div class="slider__div">
+
+                        <p class="pe">¡DEPORTIVAS EN OFERTA!</p>
+                        <img src="imagenes/Szapatillas.jpg" alt="Imagen 2">
+
+                    </div>
+
+                    <a href="zapatillas.html"></a>
+
+                    <div class="slider__div">
+
+                        <p class="pe">¡ARTICULOS EN OFERTA!</p>
+                        <img src="imagenes/Sarticulos.jpg" alt="Imagen 3">
+                    </div>
+
+                    <a href="zapatillas.html"></a>
+
+                    <div class="slider__div">
+
+                        <p class="pe">¡MANGAS EN OFERTA!</p>
+                        <img src="imagenes/Scamisetas.jpg" alt="Imagen 4">
+                    </div>
+
+                </article>
+
+                <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+                <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+            </article>
+
+        </section>
+
+
+        <!-------------------------------FIN SLIDER---------------------------------->
+        
+
+        <section class="sec2"> <!-- Sección de información -->
+
+            <img src="imagenes/articulos.jpg">
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis viverra felis, sed aliquam odio.
+                Vestibulum mollis felis ac dictum faucibus. Proin at elit sapien. Integer nec nibh ac velit sodales
+                faucibus. Proin sit amet tincidunt mi. Cras porta erat ut ex blandit, id porta est commodo. Proin non
+                ante in quam mattis eleifend nec et mauris. Praesent eu feugiat sapien.
+
+                Pellentesque blandit ante ut enim congue, et consectetur quam rhoncus. Vivamus quis facilisis ipsum, eu
+                auctor risus. Mauris consequat dolor ipsum, non bibendum enim bibendum in. Sed non sodales odio. Nullam
+                ultricies erat libero, et consequat risus elementum a. Sed sit amet convallis lacus, vel ultricies
+                velit. Nunc sagittis volutpat mauris quis laoreet. Duis eu tortor ac enim interdum lacinia id vitae
+                nibh. Duis ac consectetur dolor, iaculis porta dui. Aliquam erat volutpat. Vivamus a sem magna. In
+                pretium, velit in viverra accumsan, ante ex porttitor lectus, molestie pretium massa urna a tortor.
+                Etiam vitae placerat ipsum. Nam ornare ligula turpis, nec tristique nisi pulvinar sit amet. Phasellus
+                venenatis tristique velit vitae tempor. Nullam luctus magna quis mauris posuere, nec interdum nisi
+                fringilla.</p>
+
+
+
+        </section>
+
+
+        <section class="sec2">
+
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis viverra felis, sed aliquam odio.
+                Vestibulum mollis felis ac dictum faucibus. Proin at elit sapien. Integer nec nibh ac velit sodales
+                faucibus. Proin sit amet tincidunt mi. Cras porta erat ut ex blandit, id porta est commodo. Proin non
+                ante in quam mattis eleifend nec et mauris. Praesent eu feugiat sapien.
+
+                Pellentesque blandit ante ut enim congue, et consectetur quam rhoncus. Vivamus quis facilisis ipsum, eu
+                auctor risus. Mauris consequat dolor ipsum, non bibendum enim bibendum in. Sed non sodales odio. Nullam
+                ultricies erat libero, et consequat risus elementum a. Sed sit amet convallis lacus, vel ultricies
+                velit. Nunc sagittis volutpat mauris quis laoreet. Duis eu tortor ac enim interdum lacinia id vitae
+                nibh. Duis ac consectetur dolor, iaculis porta dui. Aliquam erat volutpat. Vivamus a sem magna. In
+                pretium, velit in viverra accumsan, ante ex porttitor lectus, molestie pretium massa urna a tortor.
+                Etiam vitae placerat ipsum. Nam ornare ligula turpis, nec tristique nisi pulvinar sit amet. Phasellus
+                venenatis tristique velit vitae tempor. Nullam luctus magna quis mauris posuere, nec interdum nisi
+                fringilla.</p>
+
+            <img src="imagenes/zapatillas.jpg">
+
+
+        </section>
+
+
+
+
+
+    </main>
+
+
+    <footer>
+
+        <div> <!-- Información del pie de página -->
+
+            <p class="info"><a href="#">973 26 57 39</a></p>
+            <p class="info"><a href="#">asiksshop@gmail.com</a></p>
+            <address>Calle Javier Cardenas Nº 26</address>
+            <p class="info">&#169;​2025 ASIKS Company</p>
+            
+        </div>
+
+        <div class="iconos-foo">
+
+            <p>Siguenos en nuestras redes</p>
+
+            <!-- Facebook -->
+            <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+
+            <!-- X (Twitter) -->
+            <a href="#"><i class="fa-brands fa-x fa-2x"></i></a>
+
+            <!-- Instagram -->
+            <a href="www.instagram.com/"><i class="fa-brands fa-instagram fa-2x"></i></a>
+
+        </div>
+
+
+        </div>
+
+
+    </footer>
+
 </body>
+
 </html>
