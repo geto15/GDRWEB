@@ -1,10 +1,8 @@
 
 /* =========================================
-   ESTILOS GENERALES (Base oscura ASIKS)
+    ESTILOS GENERALES (Base oscura ASIKS)
    ========================================= */
 body {
-    background-color: #000000; /* Fondo negro puro */
-    color: #ffffff;            /* Texto blanco */
     font-family: 'Arial', sans-serif; /* Fuente estándar limpia */
     margin: 0;
     padding: 0;
@@ -24,13 +22,14 @@ a {
 }
 
 /* =========================================
-   ESTILOS DE TU CONTENIDO (MAIN)
+    ESTILOS DEL CONTENIDO (MAIN)
    ========================================= */
 
 /* Separación para que el contenido no se pegue al header/footer */
 main {
     padding: 40px 20px;
     min-height: 80vh; /* Asegura que ocupe casi toda la pantalla */
+    
 }
 
 /* Títulos de las secciones (H2) */
