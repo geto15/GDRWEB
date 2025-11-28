@@ -245,22 +245,28 @@ a {
 
 /* --------------------------------------------------------------------------------- */
 
+
+
 .sec2 {
 
   display: flex;
   justify-content: center;
   flex-direction: row;
   align-items: center;
+  
 }
 
 .sec2 img {
 
   width: 40%;
-  height: auto;
+  height: 60vh;
+  margin: 50px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   font-weight: 400;
   font-family: EB Garamond;
+  border: solid 2px black;
+ 
 }
 
 
@@ -446,15 +452,6 @@ a {
   justify-content: center;
   flex-direction: row;
   align-items: center;
-}
-
-.sec2 img {
-
-  width: 40%;
-  height: auto;
-  margin: 50px;
-
-
 }
 
 .sec2 p {
