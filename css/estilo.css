@@ -253,6 +253,7 @@ a {
   justify-content: center;
   flex-direction: row;
   align-items: center;
+  font-size: 18px;
   
 }
 
@@ -265,7 +266,7 @@ a {
   text-transform: uppercase;
   font-weight: 400;
   font-family: EB Garamond;
-  border: solid 2px black;
+  
  
 }
 
@@ -456,7 +457,7 @@ a {
 
 .sec2 p {
 
-  width: 60%;
+  width: 40%;
   text-align: center;
   margin: 20px;
 
