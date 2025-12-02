@@ -32,11 +32,11 @@ body {
 .menu {
 
 
-	background-color: rgba(0, 0, 0, 0.9);
+	background-color: black;
 	width: 100%;
 	margin-left: -100%;
 	transition: all 0.5s;
-	position: fixed;
+	
 	top: 0;
 	height: 100vh;
 	z-index: 1000;
@@ -110,9 +110,8 @@ body {
 
 
 
-
 	.menu {
-		position: fixed;
+		
 		margin-left: 0;
 		display: flex;
 		justify-content: right;
@@ -120,9 +119,8 @@ body {
 		height: auto;
 		flex-direction: row;
 		align-items: center;
-		background-color: transparent;
+		background-color: black;
 
-		/* Scroll Animation */
 		animation: nav-scroll linear both;
 		animation-timeline: scroll();
 		animation-range: 0 200px;
