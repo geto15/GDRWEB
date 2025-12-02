@@ -49,7 +49,7 @@ main {
 }
 
 .intro-seccion p {
-    color: #aaa; /* Gris claro para subtítulos */
+    color: #1a1919; /* Gris claro para subtítulos */
     font-size: 1.1rem;
 }
 
@@ -79,7 +79,7 @@ main {
 
 /* Tarjeta individual de producto */
 .producto {
-    background-color: #121212; /* Gris muy oscuro (casi negro) */
+    background-color: #f3ecec; /* Gris muy oscuro (casi negro) */
     border: 1px solid #333;    /* Borde sutil */
     padding: 20px;
     text-align: center;
@@ -90,7 +90,7 @@ main {
 .producto:hover {
     transform: translateY(-10px); /* Sube un poco */
     border-color: #ffffff;        /* Borde blanco brillante */
-    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); /* Sombra suave */
+    box-shadow: 0 10px 20px rgba(217, 214, 214, 0.1); /* Sombra suave */
 }
 
 .producto img {
@@ -114,7 +114,7 @@ main {
 .precio {
     font-size: 1.3rem;
     font-weight: bold;
-    color: #fff;
+    color: #0c0c0c;
     margin-bottom: 20px;
     display: block;
 }
@@ -124,7 +124,7 @@ main {
     display: inline-block;
     padding: 10px 25px;
     border: 1px solid white;
-    color: white;
+    color: rgb(20, 20, 20);
     text-transform: uppercase;
     font-size: 0.8rem;
     letter-spacing: 1px;
@@ -151,7 +151,7 @@ main {
 
 .categoria-card {
     position: relative; /* Para poder poner texto encima de la imagen si quisieras */
-    background-color: #111;
+    background-color: #cecccc;
     border: 1px solid #333;
     text-align: center;
     padding-bottom: 20px;
