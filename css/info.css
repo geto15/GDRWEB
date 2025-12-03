@@ -1,99 +1,141 @@
-* {                      /*--------Fondo de negro en toda la plantilla---------*/
+
+ */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: black;
-    font-family: 'Times New Roman', Times, serif;
-    margin: 0;
-    padding: 0;
     
+    font-family: 'Times New Roman', Times, serif;
 }
 
-section {           /* ---- Parte de contacto -----*/
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: #eef1f5;
-    padding: 40px;
+body, header, main, footer, table {
+  
+    background-color: black;
 }
 
-h1 {                     /*---- Título Principal---------*/
-    text-align: center;
-    color: white;
-    font-size: 2.2rem;
-    margin-bottom: 50px;
-    letter-spacing: 1px;
-}
-h2{
-    color: white;
-}
-
-.card {             /*------ Espacio principal de toda la Página-------*/
-    background:white;
-    width: 85%;
-    max-width: 1100px;
-    margin: auto;
-    padding: 40px;
-    border-radius: 50px;
+section { 
    
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #eef1f5; 
+    padding: 40px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
-
-}
-
-
-* p {
-    font-size: 1.1rem;
-    color: white;
-    margin-bottom: 0%;
-}
-
-.info strong {
-    color: #1e88e5;
-}
-
-
-.mapa iframe {
-    width: 500px;
-    height: 600px;
-    border: none;
-    border-radius: 10px;
-
-}
-
-
-        
-section {
-    display: flex; 
-    flex-direction: row;             
-
-      display:flexbox;
-                   
-    padding: 20px;
-    justify-content: space-between;
+    align-items: flex-start; 
+    gap: 30px; 
 }
 
 section p {
     font-size: 25px;
     margin-bottom: 10px;
     display: block;
+    color: black; 
+    background-color: transparent;
 }
+
+h2 {
+    color: black; 
+    text-align: center;
+    font-size: 30px;
+    background-color: transparent;
+}
+
+section > div:first-child {
+    flex-grow: 1;
+    flex-basis: 40%; 
+    background-color: transparent;
+}
+
+
+.derecha {
+    flex-grow: 1; 
+    flex-basis: 60%; 
+    text-align: center;
+    background-color: transparent;
+}
+
 .derecha iframe {
-    width: 650px;  
+    width: 100%; 
+    max-width: 650px; 
     height: 350px;
     border: none;
+    display: block; 
+    margin: 10px auto 0 auto;
 }
+
+/* --- ESTILOS PARA LA TABLA DE CONTACTO --- */
+
+.center {
+    width: 80%;
+    margin: 40px auto;
+}
+
 tr {
     color: white;
-     font-size: 26px;
+    font-size: 26px;
+    background-color: black;
+}
 
+td {
+    background-color: black;
+    padding: 5px 10px;
+}
 
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+}
+
+button {
+    color: white;
+    font-size: 23px;
+    padding: 10px 20px;
+    border: 1px solid white;
+    cursor: pointer;
+    background-color: black;
+}
+
+/* --- ADAPTACIÓN PARA MÓVILES  --- */
+
+@media (max-width: 800px) {
+
+  
+    section {
+        flex-direction: column;
+        padding: 20px;
+        align-items: stretch; 
     }
+
+    
+    .center {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    section p, tr {
+        font-size: 18px;
+    }
+
     h2 {
-        text-align: center;
-        font-size: 30px;
+        font-size: 26px;
     }
-    button {
-        color: white;
-        font-size: 23px;
 
+   
+    .derecha {
+        flex-basis: auto;
     }
+
+    .derecha iframe {
+      
+        height: 250px; /
+    }
+
+    
+    section > div:first-child {
+        flex-basis: auto;
+    }
+}
