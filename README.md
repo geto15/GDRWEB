@@ -15,7 +15,9 @@ GDRWEB/
 ├── imagenes/               # Imatges dels productes i categories
 │
 ├── videos/                 # Recursos multimèdia (vídeos promocionals)
-│
+|
+│__ audios/                 # Recursos d'àudio         
+|
 ├── index.html              # Pàgina d'inici (Home)
 ├── contingut.html          # Distribuïdor principal del catàleg
 ├── ropa.html               # Categoria: Roba esportiva
@@ -33,27 +35,34 @@ contingut.html: Pàgina central del catàleg. Funciona com un distribuïdor que 
 
 ropa.html, zapatillas.html, articulos.html: Pàgines de llistat de productes. Cadascuna conté una graella (Grid) amb els productes de la seva secció (imatge, títol, preu i enllaç).
 
-descuentos.html: Pàgina de detall especial dedicada a les ofertes de Black Friday o productes destacats amb descripcions ampliades.
+black.html: Pàgina de detall especial dedicada a les ofertes de Black Friday o productes destacats amb descripcions ampliades.
 
-contacto.html: Pàgina d'informació corporativa ("Nosaltres") que inclou dades de contacte i informació rellevant sobre el projecte/empresa.
+info.html: Pàgina d'informació corporativa ("Nosaltres") que inclou dades de contacte i informació rellevant sobre el projecte/empresa.
 
 El treball s'ha dividit entre els tres membres del grup (GDR) de la següent manera:
 
-Gerard
-Estructura Base: Desenvolupament de l'index.html i la integració dels CSS base (menu.css, footer.css).
 
-Pàgina de Detall: Creació de descuentos.html (apartat Black Friday).
+Gerard
+Estructura Base: Desenvolupament de l'index.html i la integració dels CSS  (menu.css, footer.css, estilo.css).
+
+Pàgina de Detall: Creació de black.html (apartat Black Friday).
+
 
 David
-Catàleg: Desenvolupament del nucli de productes.
-
-Creació del distribuïdor contingut.html.
+Creació del distribuïdor(catàleg) contingut.html.
 
 Desenvolupament de les subcategories: ropa.html, zapatillas.html i articulos.html.
 
+integració dels CSS base que esta a tots els html  (estilos2.css). 
+
 Implementació de la lògica de navegació entre productes.
 
+
 Robert
-Informació i Contacte: Desenvolupament de l'apartat contacto.html (o secció d'informació).
+Informació : Desenvolupament de l'apartat info.html (o secció d'informació).
 
 Responsable de la integració de dades de l'empresa i formularis.
+
+integració dels CSS (info.css) específics per a aquesta secció.
+
+
