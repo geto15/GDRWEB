@@ -26,6 +26,7 @@ GDRWEB/
 ├── descuentos.html         # Pàgina de detall (Black Friday / Ofertes)
 ├── contacto.html           # Pàgina d'informació i contacte
 └── README.md               # Documentació del projecte
+├── sesion.html             # Pàgina de sessió d'usuari (login/signup)
 
 A continuació es detalla la funció de cada arxiu HTML:
 
@@ -39,6 +40,9 @@ black.html: Pàgina de detall especial dedicada a les ofertes de Black Friday o 
 
 info.html: Pàgina d'informació corporativa ("Nosaltres") que inclou dades de contacte i informació rellevant sobre el projecte/empresa.
 
+sesion.html: Pàgina per a la gestió de l'inici de sessió i registre d'usuaris.
+
+
 El treball s'ha dividit entre els tres membres del grup (GDR) de la següent manera:
 
 
@@ -46,6 +50,8 @@ Gerard
 Estructura Base: Desenvolupament de l'index.html i la integració dels CSS  (menu.css, footer.css, estilo.css).
 
 Pàgina de Detall: Creació de black.html (apartat Black Friday).
+
+sesion.html: Desenvolupament de la pàgina de sessió d'usuari (login/signup).
 
 
 David
@@ -66,3 +72,5 @@ Responsable de la integració de dades de l'empresa i formularis.
 integració dels CSS (info.css) específics per a aquesta secció.
 
 
+Formularis : Creació i estilització dels formularis de contacte i subscripció.
+Es login estroba a en la part dreta superior de la pagina principal, y el formulari de contacte en la pàgina de contacte a la part inferior de la pàgina.
