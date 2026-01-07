@@ -1,0 +1,42 @@
+
+
+    h1{
+
+	background-color: transparent;
+    text-align: center; 
+	margin-top: 2em;
+  
+}
+
+.gridform{
+		border: solid 2px transparent;
+		margin: 0 auto;
+		width: 50%;
+		grid-template-columns: 200px 200px;
+		justify-content: center;
+		gap: 1rem;
+		padding: 20px;
+		box-shadow: 0 0 10px 5px gray;
+	}	
+	
+	
+	.gridform input{
+		font-size: 18px;
+	}
+	
+	
+	.btn{
+        width: 30%;
+		cursor: pointer;
+		padding: 10px;
+	}
+
+    .btn:hover{
+
+        background-color: white;
+        color: black;
+
+
+
+    }
+	

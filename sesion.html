@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/info.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+     <header id="hea">
+
+        <span class="nav-bar" id="btnMenu"><i class="fas fa-bars"> </i> Menú</span>
+
+        <nav class="main-nav" id="navbar">
+
+            <ul class="menu">
+                <a href="#" class="logo-menu"><img src="imagenes/logo.png"></a>
+                <li><a href="index.html" class="menu__link"> Inicio </a> </li>
+                <li><a href="black.html" class="menu__link"> Black Friday </a> </li>
+                <li class="container-submenu"><a href="contingut.html" class="menu__link submenu-btn">
+                        Productos <i class="fas fa-chevron-down"></i></a>
+
+                    <ul class="submenu" id="submenu">
+                        <li><a href="ropa.html" class="menu__link"> Ropa deportiva </a> </li>
+                        <li><a href="zapatillas.html" class="menu__link"> Deportivas </a> </li>
+                        <li><a href="articulos.html" class="menu__link"> Articulos </a> </li>
+                    </ul>
+                </li>
+
+                <li class="menu__item"><a href="info.html" class="menu__link"> Contacto </a> </li>
+                <li class="menu__item"><a href="sesion.html" class="menu__link"> Login </a> </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h1>Inicia sesión</h1>
+         <section>
+	
+			<form action="#" method="get" name="formulario">
+
+			    <div class="gridform">
+                    <label>Nombre Completo:</label><input type="text" name="nombre">   
+                    <label>Contraseña:</label><input type="password" name="contra">   
+    
+                    <input class="btn" type="submit" name="iniciar" value="Iniciar sesion"> 
+                    <input class="btn" type="reset" name="rest" value="Borrar"> 
+			    </div>
+			</form>  
+			
+		</section>
+
+
+    </main>
+
+   
+
+
+</body>
+</html>
