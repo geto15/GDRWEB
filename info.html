@@ -69,7 +69,37 @@
 			</form>  
 			
 		</section>
-    </main>
+
+
+        <script>
+        document.getElementById("formulario").addEventListener("submit", function(e) {
+
+        let nombre = document.getElementById("nombre").value.trim();
+        let telefono = document.getElementById("telefono").value.trim();
+        let correo = document.getElementById("correo").value.trim();
+
+        let error = "";
+
+        // VALIDACIONS
+        if (nombre === "" || nombre.length < 3) {
+            error = "El nombre debe tener al menos 3 caracteres";
+        } 
+        else if (telefono === "" || telefono.length < 9) {
+            error = "El teléfono debe tener al menos 9 dígitos";
+        } 
+        else if (!correo.includes("@") || !correo.includes(".")) {
+            error = "El correo electrónico no es válido";
+        }
+
+        // MOSTRAR ERROR
+        if (error !== "") {
+            e.preventDefault();
+            document.getElementById("error").textContent = error;
+        }
+
+        });
+        </script>
+   </main>
 
 
 

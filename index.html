@@ -171,6 +171,66 @@ Tanto si practicas running, fitness, fútbol, baloncesto o deportes outdoor, en 
 
 
 
+  <!-- Mode clar/fosc -->
+ <button onclick="canviarMode()">Canviar mode</button>
+
+
+  <!-- Efecte de ratolí -->
+  <div id="hoverBox">Passa el ratolí per damunt!</div>
+
+
+  <!-- Mostrar / Ocultar -->
+  <button onclick="toggleContent()">Mostrar/Ocultar contingut</button>
+  <div id="content">
+    Aquest és un text que es pot mostrar o ocultar.
+  </div>
+
+
+  <script>
+    // MODE CLAR / FOSC
+
+
+function canviarMode() {
+if (document.body.style.backgroundColor === "white") {
+document.body.style.backgroundColor = "black";
+document.body.style.color = "white";
+} else {
+document.body.style.backgroundColor = "white";
+document.body.style.color = "black";
+}
+}
+
+
+    // EFECTES DE RATOLÍ
+    const box = document.getElementById("hoverBox");
+
+
+    box.addEventListener("mouseover", function() {
+      box.style.backgroundColor = "orange";
+      box.style.transform = "scale(1.1)";
+    });
+
+
+    box.addEventListener("mouseout", function() {
+      box.style.backgroundColor = "lightblue";
+      box.style.transform = "scale(1)";
+    });
+
+
+    // MOSTRAR / OCULTAR
+    function toggleContent() {
+      const content = document.getElementById("content");
+
+
+      if (content.style.display === "none") {
+        content.style.display = "block";
+      } else {
+        content.style.display = "none";
+      }
+    }
+  </script>
+
+
 
 
     </main>

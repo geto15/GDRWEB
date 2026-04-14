@@ -317,6 +317,31 @@ a {
 
 }
 
+/*JAVASCRIPT*/
+
+
+
+/*JAVASCRIPT*/
+
+    /* Element per efecte de ratolí */
+    #hoverBox {
+      width: 200px;
+      padding: 20px;
+      background-color: lightblue;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+
+    /* Secció ocultable */
+    #content {
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid black;
+      display: none;
+    }
+
+
 /* Media Queries */
 
 @media (max-width: 1024px) {
